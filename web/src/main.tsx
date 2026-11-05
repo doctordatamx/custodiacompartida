@@ -303,7 +303,7 @@ function Dashboard({ data }: { data: Dataset }) {
   return <>
     <header className="top"><div className="top-inner">
       <a href="#inicio" className="brand"><span className="brand-icon" aria-hidden="true">▥</span> Observatorio <strong>Divorcios MX</strong></a>
-      <nav aria-label="Secciones"><a href="#panorama">Panorama</a><a href="#entidades">Entidades</a><a href="#custodia">Custodia</a><a href="#menores">Menores</a><a href="#atlas">Mapa</a><a href="#perfiles">Perfiles</a></nav>
+      <nav aria-label="Secciones"><a href="#panorama">Panorama</a><a href="#entidades">Entidades</a><a href="#custodia">Custodia</a><a href="#menores">Menores</a><a href="#atlas">Mapa</a><a href="#perfiles">Perfiles</a><a href="#contacto">Contacto</a></nav>
     </div></header>
     <section className="hero" id="inicio"><div className="wrap hero-inner">
       <div className="eyebrow"><span className="dot" /> DATOS, FAMILIAS Y JUSTICIA</div>
@@ -411,6 +411,28 @@ function Dashboard({ data }: { data: Dataset }) {
         </article>
       </section>
       <CustodyProfiles state={state} onState={setState} />
+      <section id="contacto" className="section" aria-labelledby="contacto-titulo">
+        <span className="kicker">07 / CONTACTO</span>
+        <h2 id="contacto-titulo">Contacto</h2>
+        <div className="panel contact-panel">
+          <div>
+            <h3>Sobre el observatorio</h3>
+            <p>El Observatorio de Divorcios y Custodia en México reúne datos del INEGI para explorar cómo han cambiado los divorcios registrados y la asignación de custodia en el país.</p>
+            <p>Para preguntas, comentarios o propuestas de colaboración, escribe a <a href="mailto:doctordata670@gmail.com">doctordata670@gmail.com</a>.</p>
+          </div>
+          <div>
+            <h3>Apoya el proyecto</h3>
+            <p>Si el observatorio te resulta útil, puedes apoyar su mantenimiento y futuras actualizaciones con una aportación voluntaria en Ko-fi.</p>
+            <iframe
+              className="kofi-widget"
+              src={`${import.meta.env.BASE_URL}ko-fi.html`}
+              title="Apoyar en Ko-fi"
+              loading="lazy"
+              sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer><div className="wrap foot"><strong>Observatorio de Divorcios y Custodia en México</strong><a href="https://www.inegi.org.mx/programas/ed/#datos_abiertos">Estadística de Divorcios · INEGI ↗</a></div></footer>
   </>

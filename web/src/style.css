@@ -64,6 +64,9 @@ tr.selected{background:#e6f3ed}
 .custody-row strong,.custody-row span:last-child{text-align:right}
 .custody-row span:last-child{color:var(--muted)}
 .empty button{color:#0c675a;text-decoration:underline}
+.contact-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.contact-panel a{overflow-wrap:anywhere}
+.kofi-widget{display:block;width:100%;max-width:250px;height:48px;border:0;margin-top:10px}
 footer{background:#102e2e;color:#dbece3;margin-top:44px}
 .foot{display:flex;justify-content:space-between;gap:16px;padding-block:24px;font-size:.85rem}
 @media(max-width:650px){
@@ -79,6 +82,7 @@ footer{background:#102e2e;color:#dbece3;margin-top:44px}
  .chart{height:235px}
  .custody-row{grid-template-columns:minmax(90px,1.5fr) 1fr 45px 41px;gap:6px;font-size:.75rem}
  .foot{flex-direction:column}
+ .contact-panel{grid-template-columns:1fr}
 }
 
 .csv-button{background:#e1f0e8;border:1px solid #c8e2d6;border-radius:7px;padding:8px 13px;white-space:nowrap;font-size:.85rem;font-weight:650}

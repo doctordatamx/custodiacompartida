@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Apoyar en Ko-fi</title>
+  <style>
+    body { margin: 4px; font: 600 .9rem system-ui, sans-serif; }
+    .fallback { display: inline-block; padding: 8px 13px; border-radius: 7px; background: #72a4f2; color: #102e2e; }
+    .widget-loaded .fallback { display: none; }
+  </style>
+</head>
+<body>
+  <script src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+  <script>
+    if (window.kofiwidget2) {
+      kofiwidget2.init('Apoyar en Ko-fi', '#72a4f2', 'F4V12A4XQW');
+      kofiwidget2.draw();
+      document.documentElement.classList.add('widget-loaded');
+    }
+  </script>
+  <a class="fallback" href="https://ko-fi.com/F4V12A4XQW" target="_blank" rel="noopener noreferrer">Apoyar en Ko-fi</a>
+</body>
+</html>
